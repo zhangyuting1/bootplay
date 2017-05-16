@@ -8,15 +8,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class BootplayApplication {
 
-
-    @Bean
-    public CommandLineRunner dataInitRunner() {
-
-        return args -> {
-
-        };
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(BootplayApplication.class, args);
     }
