@@ -15,6 +15,7 @@ public class RunnerConfig {
 
         return args -> {
             System.out.println("hello");
+            System.out.println("world");
         };
     }
 }
