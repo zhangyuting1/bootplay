@@ -17,6 +17,8 @@ public class RunnerConfig {
             System.out.println("hello");
             System.out.println("world");
             System.out.println("Rainy");
+
+            System.out.println("Daniel");
         };
     }
 }
