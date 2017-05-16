@@ -14,7 +14,7 @@ public class RunnerConfig {
     public CommandLineRunner dataInitRunner() {
 
         return args -> {
-
+            System.out.println("hello");
         };
     }
 }
