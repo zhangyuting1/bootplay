@@ -14,9 +14,7 @@ public class RunnerConfig {
     public CommandLineRunner dataInitRunner() {
 
         return args -> {
-            System.out.println("data init");
-            System.out.println("data init2");
-            System.out.println("data init3");
+
         };
     }
 }
