@@ -15,6 +15,7 @@ public class RunnerConfig {
 
         return args -> {
             System.out.println("data init");
+            System.out.println("data init2");
         };
     }
 }
