@@ -11,6 +11,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 /**
@@ -26,7 +27,12 @@ public class RunnerConfig {
 
         return args -> {
 
-            Artist jc = artistRepository.save(new Artist(null, "Jay Chou", Gender.Male, "Taiwan"));
+            Artist jc = artistRepository.save(new Artist(
+                    null,
+                    "Jay Chou",
+                    Gender.Male,
+                    LocalDate.parse("1979-01-18"),
+                    "Taiwan"));
 
             Album jc1 = new Album();
             jc1.setName("Jay");
@@ -50,7 +56,12 @@ public class RunnerConfig {
             jc3.setGenre("R&B");
 
 
-            Artist ts = artistRepository.save(new Artist(null, "Taylor Swift", Gender.Female, "America"));
+            Artist ts = artistRepository.save(new Artist(
+                    null,
+                    "Taylor Swift",
+                    Gender.Female,
+                    LocalDate.parse("1989-12-13"),
+                    "America"));
 
             Album ts1 = new Album();
             ts1.setName("Taylor Swift");
@@ -88,7 +99,12 @@ public class RunnerConfig {
             ts5.setGenre("Pop");
 
 
-            Artist oo = artistRepository.save(new Artist(null, "Olivia Ong", Gender.Female, "Singapore"));
+            Artist oo = artistRepository.save(new Artist(
+                    null,
+                    "Olivia Ong",
+                    Gender.Female,
+                    LocalDate.parse("1985-12-02"),
+                    "Singapore"));
 
             Album oo1 = new Album();
             oo1.setName("A Girl Meets Bossanova");

@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 /**
  * Created by dipengfei on 16/05/2017.
@@ -25,6 +26,9 @@ public class Artist {
     @Column
     @Enumerated(EnumType.STRING)
     private Gender gender;
+
+    @Column
+    private LocalDate birthday;
 
     @Column
     private String origin;
